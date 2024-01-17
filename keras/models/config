@@ -1,0 +1,20 @@
+[paths]
+path_wd = /content/drive/MyDrive/Dissertation/project_code/SNNToolbox/models/
+dataset_path = /content/drive/MyDrive/Dissertation/project_code/SNNToolbox/models/
+filename_ann = mnist_cnn
+
+[tools]
+evaluate_ann = True
+normalize = True
+
+[simulation]
+simulator = INI
+duration = 100
+num_to_test = 100
+batch_size = 100
+keras_backend = tensorflow
+
+[output]
+log_vars = {'synaptic_operations_b_t', 'spiketrains_n_b_l_t', 'neuron_operations_b_t', 'mem_n_b_l_t', 'input_b_l_t', 'activations_n_b_l', 'all'}
+plot_vars = {'hist_spikerates_activations', 'spiketrains', 'spikerates', 'input_image', 'activations', 'spikecounts', 'operations', 'correlation', 'v_mem', 'error_t', 'normalization_activations'}
+

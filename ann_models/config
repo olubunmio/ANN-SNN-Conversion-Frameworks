@@ -1,0 +1,22 @@
+[paths]
+path_wd = /content/drive/MyDrive/Dissertation/project_code/ann_models/
+dataset_path = /content/drive/MyDrive/Dissertation/project_code/ann_models/
+filename_ann = cnn_model
+
+[tools]
+evaluate_ann = True
+normalize = True
+
+[simulation]
+simulator = INI
+duration = 50
+num_to_test = 100
+batch_size = 50
+keras_backend = tensorflow
+
+[input]
+model_lib = pytorch
+
+[output]
+plot_vars = {'correlation', 'activations', 'spiketrains', 'v_mem', 'error_t', 'spikerates'}
+
